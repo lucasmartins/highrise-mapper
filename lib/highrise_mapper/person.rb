@@ -15,9 +15,10 @@ module HighriseMapper
         begin
           highrise_person.save!
         rescue Exception => e
+          #shoud get rails logger if available
           puts highrise_person.errors
         end
-        return highrise_person
+        return highrise_person.attributes['id']
       end
 
       def delete_from_highrise(force_id=nil)
