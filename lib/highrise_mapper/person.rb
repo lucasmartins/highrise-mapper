@@ -46,15 +46,6 @@ module HighriseMapper
 
     private
     def self.check_expected_behavior(receiver)
-      unless receiver.method_defined? 'highrise_mapping'
-        raise <<-EOT
-
-          Your model must respond to "highrise_mapping", which is a Hash where you map between the keys Highrise uses and your model attributes, like this one:
-            def highrise_mapping
-              {'first-name'=>self.name,'last-name'=>self.last_name,'company-name'=>self.company,'contact-data'=>['email-addresses'=>[{'address'=>'jonh@gmail.com','location'=>'work'}]]}
-            end
-        EOT
-      end
       unless receiver.method_defined? 'highrise_context'
         raise 'Your model must respond to "highrise_context", where it returns the Instace of the HighriseMapper::Context model'
       end
