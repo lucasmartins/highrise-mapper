@@ -18,6 +18,10 @@ class Contact
   def highrise_context
     SaasCustomer.new
   end
+
+  def highrise_id
+    112233
+  end
   #must be included after required behavior has been added to the Class
   include HighriseMapper::Person
 end

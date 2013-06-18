@@ -17,7 +17,6 @@ module HighriseMapper
         rescue Exception => e
           puts highrise_person.errors
         end
-        
         return highrise_person
       end
 
@@ -48,6 +47,9 @@ module HighriseMapper
     def self.check_expected_behavior(receiver)
       unless receiver.method_defined? 'highrise_context'
         raise 'Your model must respond to "highrise_context", where it returns the Instace of the HighriseMapper::Context model'
+      end
+      unless receiver.method_defined? 'highrise_id'
+        raise 'Your model must respond to "highrise_id", where it returns the id of its remote representation on Highrise (or nil if not existant)'
       end
     end
   end
