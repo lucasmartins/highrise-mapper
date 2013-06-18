@@ -1,4 +1,4 @@
-require 'highrise-rails4'
+require 'highrise'
 require 'erb'
 require 'logger'
 require 'tempfile'
