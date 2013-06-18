@@ -1,4 +1,8 @@
-#highrise_key: Model key 
+# For a documentation on Highrise keys, refer to:
+#  https://github.com/37signals/highrise-api/blob/master/sections/data_reference.md#person
+# NOTE: You should replace '-' with '_', like: first-name -> first_name
+#
+# On the left goes the Highrise key, on the right goes you model's field/method 
 person:
   first_name: name
   last_name: last_name
