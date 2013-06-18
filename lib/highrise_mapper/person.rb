@@ -1,8 +1,7 @@
 module HighriseMapper
   module Person
 
-    module ClassMethods
-      
+    module ClassMethods 
     end
     
     module InstanceMethods

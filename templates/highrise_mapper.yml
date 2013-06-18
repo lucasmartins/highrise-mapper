@@ -1,0 +1,6 @@
+#highrise_key: Model key 
+person:
+  first_name: name
+  last_name: last_name
+  company_name: company_name
+  email_address: email

@@ -1,8 +1,7 @@
 module HighriseMapper
-
   module Context
+
     module ClassMethods
-      
     end
     
     module InstanceMethods
