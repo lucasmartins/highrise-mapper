@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.required_ruby_version = ">= 1.9.3"
   s.authors               = ["Lucas Martins"]
   s.email                 = ["lucasmartins@railsnapraia.com"]
-  s.homepage              = "http://rubygems.org/gems/highrise-rails4"
+  s.homepage              = "http://rubygems.org/gems/highrise-mapper"
   s.summary               = "Experimental Gem"
   s.description           = s.summary
   s.license               = "MIT"

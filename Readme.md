@@ -13,9 +13,11 @@ Install
 =======
 
 You can:
+
 `$ gem install highrise-mapper`
 
 Or just add it to your Gemfile
+
 `gem 'highrise-mapper'`
 
 Use
@@ -23,6 +25,7 @@ Use
 
 ### Configuration file
 If you are on Rails, run the following command to generate a config file:
+
 `$ rails g highrisemapper:config`
 
 This file maps between the fields Highrise expects and the fields/methods your model has, like this.
