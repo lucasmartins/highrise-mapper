@@ -9,7 +9,19 @@ This Gem depends heavily on the [Highrise](https://github.com/tapajos/highrise) 
 
 This Gem adds [Highrise](https://github.com/tapajos/highrise) behavior to your models so you can call `@person.save_to_highrise`
 
-### Configure
+Install
+=======
+
+You can:
+`$ gem install highrise-mapper`
+
+Or just add it to your Gemfile
+`gem 'highrise-mapper'`
+
+Use
+===
+
+### Configuration file
 If you are on Rails, run the following command to generate a config file:
 `$ rails g highrisemapper:config`
 
@@ -47,43 +59,17 @@ end
 ```
 Notice that this implementation is database agnostic, there is no database reference whatsoever.
 
-Install
-=======
-
-As any other Gem:
-`$ gem install tacape`
-
-You may have to run a rehash for Rbenv:
-`$ rbenv rehash`
-
-Use
-===
-
-Tacape is a CLI tool based on Thor, so just run `tacape` to see the commands available:
-
-```
-$ tacape
-This is Tacape, a command-line tool that gathers years of personal crafting, don't use it too seriously thou.
-Commands:
-  tacape check           # Checks for system dependencies
-  tacape dns             # Tacape Tool for DNS things
-  tacape help [COMMAND]  # Describe available commands or one specific command
-  tacape owngit          # Tacape Tool for managing remote Bare Git repositories through SSH
-  tacape update          # Updates the Tools local repository
-  tacape version         # Shows version
-```
+Check the specs to see the testing example.
 
 Contribute
 ==========
 
-Have any scripts laying around that you could be sharing? 
-
-Just fork [Tacape Tools](https://github.com/lucasmartins/tacape-tools), add your tool, and make a pull request.
+Just fork [HighriseMapper](https://github.com/lucasmartins/highrise-mapper), add your tool, and make a pull request.
 
 Support
 =======
 
-This is an opensource project so don't expect premium support, but don't be shy, post any troubles you're having in the [Issues](https://github.com/lucasmartins/tacape/issues) page and we'll do what we can to help.
+This is an opensource project so don't expect premium support, but don't be shy, post any troubles you're having in the [Issues](https://github.com/lucasmartins/highrise-mapper/issues) page and we'll do what we can to help.
 
 License
 =======
