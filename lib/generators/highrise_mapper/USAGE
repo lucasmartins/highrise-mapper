@@ -1,0 +1,8 @@
+Description:
+    Creates a sample highrise_mapper.yml
+
+Example:
+    rails generate highrise_mapper:config
+
+    This will create:
+        config/highrise_mapper.yml
