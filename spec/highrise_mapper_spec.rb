@@ -1,4 +1,6 @@
 require "spec_helper"
+require 'pry'
+require 'pry-nav'
 
 describe HighriseMapper, "::config" do
   it "returns a valid configuration Hash" do

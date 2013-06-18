@@ -8,7 +8,7 @@ module HighriseMapper
       def setup_highrise
         Highrise::Base.site = self.highrise_base_url
         Highrise::Base.user = self.highrise_token
-        Highrise::Base.format = :xml
+        Highrise::Base.format = :xml  
       end
     end
 

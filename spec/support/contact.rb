@@ -8,7 +8,7 @@ class Contact
   end
 
   def company_name
-    self.company.name
+    'Princeton University'
   end
 
   def email
