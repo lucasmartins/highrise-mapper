@@ -26,10 +26,8 @@ module HighriseMapper
 
   def self.load_config(root_dir=nil)
     root_dir ||= Pathname.new(Dir.pwd)
-    unless root_dir.end_with?('/')
-      root_dir+='/'
-    end
-    path = "#{root_dir}config/highrise_mapper.yml"
+    
+    path = "#{root_dir}/config/highrise_mapper.yml"
 
     raise "Couldn't find config yml at #{path}." unless File.file?(path)
     content = File.read(path)
