@@ -17,8 +17,8 @@ end
 
 module HighriseMapper
 
-  autoload :Context, 'highrise_mapper/context'
-  autoload :Person, 'highrise_mapper/person'
+  load 'highrise_mapper/context.rb'
+  load 'highrise_mapper/person.rb'
 
   def self.config(root_dir=nil)
     @config ||= load_config
