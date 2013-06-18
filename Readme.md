@@ -28,7 +28,7 @@ Use
 ### Configuration file
 If you are on Rails, run the following command to generate a config file:
 
-`$ rails g highrisemapper:config`
+`$ rails g highrise_mapper:config`
 
 This file maps between the fields Highrise expects and the fields/methods your model has, like this.
 
@@ -69,7 +69,7 @@ Check the specs to see the testing example.
 Contribute
 ==========
 
-Just fork [HighriseMapper](https://github.com/lucasmartins/highrise-mapper), add your tool, and make a pull request.
+Just fork [HighriseMapper](https://github.com/lucasmartins/highrise-mapper), add your feature+spec, and make a pull request.
 
 Support
 =======
