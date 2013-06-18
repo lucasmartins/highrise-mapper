@@ -1,8 +1,5 @@
 module HighriseMapper
   module Person
-
-    module ClassMethods 
-    end
     
     module InstanceMethods
       def save_to_highrise
@@ -50,7 +47,6 @@ module HighriseMapper
     end
     
     def self.included(receiver)
-      receiver.extend         ClassMethods
       receiver.send :include, InstanceMethods
       check_expected_behavior(receiver)
     end

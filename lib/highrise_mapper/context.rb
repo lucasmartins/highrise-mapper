@@ -1,9 +1,6 @@
 module HighriseMapper
   module Context
 
-    module ClassMethods
-    end
-    
     module InstanceMethods
       def setup_highrise
         Highrise::Base.site = self.highrise_base_url
@@ -13,7 +10,6 @@ module HighriseMapper
     end
 
     def self.included(receiver)
-      receiver.extend         ClassMethods
       receiver.send :include, InstanceMethods
       check_expected_behavior(receiver)
     end
