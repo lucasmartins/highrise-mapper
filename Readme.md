@@ -13,12 +13,14 @@ Install
 =======
 
 You can:
-
-`$ gem install highrise-mapper`
+```
+  $ gem install highrise-mapper
+```
 
 Or just add it to your Gemfile
-
-`gem 'highrise-mapper'`
+```
+  gem 'highrise-mapper'
+```
 
 Use
 ===
@@ -30,7 +32,7 @@ If you are on Rails, run the following command to generate a config file:
 
 This file maps between the fields Highrise expects and the fields/methods your model has, like this.
 
-```
+```yml
 #highrise_key: Model key 
 person:
   first_name: name
@@ -41,7 +43,7 @@ person:
 
 In this example, you could have a Person class like this one:
 
-```
+```ruby
 class Person
   def name
     'Albert'
