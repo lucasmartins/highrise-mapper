@@ -25,10 +25,13 @@ module HighriseMapper
         new_hash = {}
         config = HighriseMapper.config
         config['person'].each do |k,v|
-          if k=='email_address'
-            new_hash['contact_data']={'email_addresses'=>[{'address'=> self.send(v),'location'=>''}]}
-          else
-            new_hash[k]=self.send(v)
+          if v!=nil && v!=''
+            case k
+            when 'email_address'
+              new_hash['contact_data']={'email_addresses'=>[{'address'=> self.send(v),'location'=>''}]}
+            else
+              new_hash[k]=self.send(v)
+            end
           end
         end
         return new_hash
