@@ -40,6 +40,12 @@ person:
   company_name: company_name
   email_address: email
 ```
+Non-Railers should call `HighriseMapper.config(root_directory)` on application bootstrap, where it will be mapped like this: 
+```ruby
+  "#{root_dir}/config/highrise_mapper.yml"
+```
+
+### Your model
 
 In this example, you could have a Person class like this one:
 
@@ -64,7 +70,7 @@ end
 ```
 Notice that this implementation is database agnostic, there is no database reference whatsoever.
 
-Check the specs to see the testing example.
+Check the [specs](https://github.com/lucasmartins/highrise-mapper/tree/master/spec) to see the testing example.
 
 Checkout the [sample rails application](https://github.com/lucasmartins/highrise-mapper-example).
 
