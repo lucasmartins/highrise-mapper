@@ -16,13 +16,19 @@ class Module
 end
 
 module HighriseMapper
-  ROOT = Pathname.new(File.dirname(__FILE__) + "/..")
 
-  def self.config(root_dir = nil)
+  autoload :Context, 'highrise_mapper/context'
+  autoload :Person, 'highrise_mapper/person'
+
+  def self.config(root_dir=nil)
+    @config ||= load_config
+  end
+
+  def self.load_config(root_dir=nil)
     root_dir ||= Pathname.new(Dir.pwd)
     path = root_dir.join("config/highrise_mapper.yml")
 
-    raise "Invalid HighriseMapper directory; couldn't found config/highrise_mapper.yml file." unless File.file?(path)
+    raise "Couldn't find config/highrise_mapper.yml file at #{path}." unless File.file?(path)
     content = File.read(path)
     erb = ERB.new(content).result
     YAML.load(erb).with_indifferent_access
