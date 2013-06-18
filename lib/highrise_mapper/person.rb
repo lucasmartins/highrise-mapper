@@ -20,6 +20,17 @@ module HighriseMapper
         return highrise_person
       end
 
+      def delete_from_highrise(force_id=nil)
+        if force_id!=nil
+          highrise_id = force_id
+        else
+          highrise_id = self.highrise_id
+        end
+        self.highrise_context.setup_highrise
+        highrise_person = Highrise::Person.find(highrise_id)
+        highrise_person.destroy
+      end
+
       def build_highrise_hash
         new_hash = {}
         config = HighriseMapper.config
