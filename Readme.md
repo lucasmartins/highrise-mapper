@@ -66,10 +66,14 @@ Notice that this implementation is database agnostic, there is no database refer
 
 Check the specs to see the testing example.
 
+Checkout the [sample rails application](https://github.com/lucasmartins/highrise-mapper-example).
+
 Contribute
 ==========
 
 Just fork [HighriseMapper](https://github.com/lucasmartins/highrise-mapper), add your feature+spec, and make a pull request.
+
+Also, if needed, update the code of the [sample application](https://github.com/lucasmartins/highrise-mapper-example).
 
 Support
 =======
