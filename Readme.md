@@ -70,7 +70,7 @@ end
 ```
 ### HighriseMapper::Person
 
-When including, the module HighriseMapper::Person will check for expected behavior from your class, so you will have to make some changes:
+When including, the module `HighriseMapper::Person` will check for expected behavior from your class, so you will have to make some changes:
 
 ```ruby
 class Person
@@ -140,7 +140,7 @@ Again, check the [specs](https://github.com/lucasmartins/highrise-mapper/tree/ma
 Contribute
 ==========
 
-Just fork [HighriseMapper](https://github.com/lucasmartins/highrise-mapper), add your feature+spec, and make a pull request.
+Just fork [HighriseMapper](https://github.com/lucasmartins/highrise-mapper), add your feature+spec, and make a pull request. Do not mess up with the version file though.
 
 Also, if needed, update the code of the [sample application](https://github.com/lucasmartins/highrise-mapper-example).
 
