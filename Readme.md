@@ -72,7 +72,7 @@ end
 
 When including, the module HighriseMapper::Person will check for expected behavior from your class, so you will have to make some changes:
 
-```
+```ruby
 class Person
   def name
     'Albert'
@@ -115,7 +115,7 @@ Checkout the [sample rails application](https://github.com/lucasmartins/highrise
 
 When saving to Highrise, `HighriseMapper::Person` will look for the **base url** and **token** to connect to the right account, so you must have a model that represents this account configuration:
 
-```
+```ruby
 class SaasCustomer
   def name
     'Rails na Praia'
