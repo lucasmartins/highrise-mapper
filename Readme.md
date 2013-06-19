@@ -68,11 +68,74 @@ class Person
   end
 end
 ```
+### HighriseMapper::Person
+
+When including, the module HighriseMapper::Person will check for expected behavior from your class, so you will have to make some changes:
+
+```
+class Person
+  def name
+    'Albert'
+  end
+
+  def last_name
+    'Einstein'
+  end
+
+  def company_name
+    self.company.name
+  end
+
+  def email
+    'albert.einstein@princeton.edu'
+  end
+
+  def highrise_context
+    #must return an instance that includes HighriseMapper::Context
+    self.highrise_account
+  end
+
+  def highrise_id
+    #must return the id this object has in Highrise
+    112233
+  end
+
+  #must be included after required behavior has been added to the Class
+  include HighriseMapper::Person
+end
+```
+
+Check the [specs](https://github.com/lucasmartins/highrise-mapper/tree/master/spec) to see the testing example, it will surely make it clearer.
+
 Notice that this implementation is database agnostic, there is no database reference whatsoever.
 
-Check the [specs](https://github.com/lucasmartins/highrise-mapper/tree/master/spec) to see the testing example.
-
 Checkout the [sample rails application](https://github.com/lucasmartins/highrise-mapper-example).
+
+### HighriseMapper::Context
+
+When saving to Highrise, `HighriseMapper::Person` will look for the **base url** and **token** to connect to the right account, so you must have a model that represents this account configuration:
+
+```
+class SaasCustomer
+  def name
+    'Rails na Praia'
+  end
+
+  def highrise_base_url
+    'https://railsnapraia.highrisehq.com'
+  end
+
+  def highrise_token
+    'a11386d68bdd94fe549b8498afafce56'
+  end
+  #must be included after required behavior has been added to the Class
+  include HighriseMapper::Context
+end
+```
+
+It is designed this way so your SaaS application (example) can connect to multiple Highrise accounts, then we can have an ERP/CRM SaaS application where each customer sets up their own Highrise account.
+
+Again, check the [specs](https://github.com/lucasmartins/highrise-mapper/tree/master/spec) to see the testing examples.
 
 Contribute
 ==========
