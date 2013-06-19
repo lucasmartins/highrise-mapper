@@ -1,4 +1,4 @@
-[![Gem version](https://badge.fury.io/rb/highrise-mapper.png)](http://rubygems.org/gems/highrise_mapper) [![Code Climate](https://codeclimate.com/github/lucasmartins/highrise-mapper.png)](https://codeclimate.com/github/lucasmartins/highrise-mapper) [![Build Status](https://secure.travis-ci.org/lucasmartins/highrise-mapper.png?branch=master)](https://travis-ci.org/lucasmartins/highrise-mapper) [![Dependency Status](https://gemnasium.com/lucasmartins/highrise-mapper.png)](https://gemnasium.com/lucasmartins/highrise-mapper)
+[![Gem version](https://badge.fury.io/rb/highrise_mapper.png)](http://rubygems.org/gems/highrise_mapper) [![Code Climate](https://codeclimate.com/github/lucasmartins/highrise-mapper.png)](https://codeclimate.com/github/lucasmartins/highrise-mapper) [![Build Status](https://secure.travis-ci.org/lucasmartins/highrise-mapper.png?branch=master)](https://travis-ci.org/lucasmartins/highrise-mapper) [![Dependency Status](https://gemnasium.com/lucasmartins/highrise-mapper.png)](https://gemnasium.com/lucasmartins/highrise-mapper)
 
 Highrise Mapper
 ===============
