@@ -135,7 +135,7 @@ end
 
 It is designed this way so your SaaS application (example) can connect to multiple Highrise accounts, then we can have an ERP/CRM SaaS application where each customer sets up their own Highrise account.
 
-Again, check the [specs](https://github.com/lucasmartins/highrise-mapper/tree/master/spec) to see the testing examples.
+Again, check the [specs](https://github.com/lucasmartins/highrise-mapper/tree/master/spec) and the [sample rails application](https://github.com/lucasmartins/highrise-mapper-example).
 
 Contribute
 ==========
