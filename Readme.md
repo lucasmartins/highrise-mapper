@@ -152,4 +152,4 @@ This is an opensource project so don't expect premium support, but don't be shy,
 License
 =======
 
-Tacape Tools is free software under the [MIT license](http://lucasmartins.mit-license.org).
+Highrise Mapper is free software under the [MIT license](http://lucasmartins.mit-license.org).
