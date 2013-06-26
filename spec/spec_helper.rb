@@ -11,8 +11,6 @@ TMPDIR = SPECDIR.join("tmp")
 Dir[File.dirname(__FILE__) + "/support/**/*.rb"].each {|r| require r}
 
 RSpec.configure do |config|
-  config.include(SpecHelper)
-
   config.before { FileUtils.mkdir_p(TMPDIR) }
 end
 
