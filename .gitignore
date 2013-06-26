@@ -1,3 +1,6 @@
 .DS_Store
 pkg
 tmp
+
+#where I keep my 'export's for HIGHRISE_TOKEN and HIGHRISE_BASE_URL
+env.bash
