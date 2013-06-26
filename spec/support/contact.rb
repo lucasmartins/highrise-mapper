@@ -1,4 +1,5 @@
 class Contact
+  extend RSpec::Mocks
   def name
     'Albert'
   end
@@ -16,7 +17,11 @@ class Contact
   end
 
   def highrise_context
-    SaasCustomer.new
+    @saas_customer = SaasCustomer.new
+    @saas_customer.stub(highrise_base_url: 'Rails on the beach' )
+    @saas_customer.stub(highrise_base_url: ENV['HIGHRISE_BASE_URL'] )
+    @saas_customer.stub(highrise_token: ENV['HIGHRISE_TOKEN'] )
+    return @saas_customer
   end
 
   def highrise_id
