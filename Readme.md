@@ -14,12 +14,12 @@ Install
 
 You can:
 ```
-  $ gem install highrise-mapper
+  $ gem install highrise_mapper
 ```
 
 Or just add it to your Gemfile
 ```
-  gem 'highrise-mapper'
+  gem 'highrise_mapper'
 ```
 
 Use
